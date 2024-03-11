@@ -1,0 +1,123 @@
+body {
+    font-family: "Fira Code", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#logo_header {
+    height: 50px;
+}
+
+#banner_header {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.toolbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar ul li {
+    display: inline;
+}
+
+.toolbar ul li a {
+    color: white;
+    text-decoration: none; /* Ensure links have no underline */
+    padding: 14px 16px;
+}
+
+.toolbar ul li a:hover {
+    background-color: #111;
+}
+
+.logo img {
+    height: 40px;
+    width: auto; /* Ensure the logo scales proportionally */
+}
+
+.toolbar button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background-color: #b30000;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.cta {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999;
+}
