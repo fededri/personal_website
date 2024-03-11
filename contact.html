@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Torres</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contactStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
+
+    <main>
+        <section>
+            <div id="title_container">
+                <h1 style="margin-top: 100px;">Let's get in touch</h1>
+                <p>Email me at <b>federico@fedetorresdev.com</b> or send me a message filling the contact form below.</p>
+            </div>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+       
+
+        <script src="navbar.js"></script>
+        <script src="redirections.js"></script>
+</body>
+</html>

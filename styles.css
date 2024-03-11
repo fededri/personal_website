@@ -33,6 +33,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .toolbar ul {
@@ -60,18 +64,17 @@ header {
     width: auto; /* Ensure the logo scales proportionally */
 }
 
-.toolbar button {
-    padding: 8px 16px;
-    font-size: 14px;
-    background-color: #007bff;
-    color: #fff;
+.toolbar ul li button {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    background-color: #333;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 16px;
 }
 
 .toolbar button:hover {
-    background-color: #b30000;
+    background-color: #111;
 }
 
 h1 {
@@ -98,26 +101,6 @@ p {
     text-align: center;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 button:hover {
     background-color: #0056b3;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 14px;
-    color: #999;
 }
