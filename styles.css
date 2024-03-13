@@ -140,6 +140,13 @@ button:hover {
 
 
 /***** SKILLS CLOUD ******/
+.cloud_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .cloud {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -147,6 +154,7 @@ button:hover {
     padding: 20px;
     margin-top: 48px;
     transition: opacity 0.5s ease;
+    max-width: 500px;
 }
 
 .cloud .skill {
@@ -160,6 +168,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 150px;
 }
 
 .cloud .skill:hover {
