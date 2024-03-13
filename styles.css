@@ -5,8 +5,25 @@ body {
     background-color: #f8f9fa;
 }
 
+#personal_picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px  rgba(0, 0, 0, 0.1);
+}
+
 .container {
-    margin: 0 auto;
+    margin: 0px auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20vw;
 }
 
 header {
@@ -23,8 +40,9 @@ header {
     width: 100%;
     height: auto;
     max-height: 300px;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center;
+    
 }
 
 .toolbar {
@@ -37,6 +55,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 0px48px 8px rgba(0, 0, 0, 0.2);
 }
 
 .toolbar ul {
@@ -85,6 +104,7 @@ h1 {
 .intro {
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 h2 {
@@ -97,10 +117,98 @@ p {
     color: #666;
 }
 
+
 .cta {
     text-align: center;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+.skills {
+    text-align: start;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.skills li {
+    color: #6e6b6b;
+}
+
+
+/***** SKILLS CLOUD ******/
+.cloud {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 48px;
+    transition: opacity 0.5s ease;
+}
+
+.cloud .skill {
+    background-color: #333;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    animation: bounce 2s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud .skill:hover {
+    transform: translateY(-5px);
+}
+
+.cloud .skill:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.cloud .skill:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.cloud .skill:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.cloud .skill:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.cloud .skill:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.arrow {
+    transition: transform 0.5s ease; /* Smooth transition for the arrow */
+}
+
+.arrow.down {
+    transform: rotate(90deg); /* Rotate the arrow when dropdown is shown */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.links a {
+    margin-right: 16px;
 }

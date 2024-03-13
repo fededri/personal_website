@@ -1,8 +1,12 @@
 
 function redirectToBlog() {
-    window.location.href = "https://fedetorresdev.com";
+    window.open("https://fedetorresdev.com", "_blank");
 }
 
 function redirectToContact() {
     window.location.href = "contact.html"
+}
+
+function redirectToHome() {
+    window.location.href = "index.html"
 }
